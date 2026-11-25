@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "revision": 2,
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 2738,
+      "sha256": "e4af1f7f2a1d533ff90bde5146b20854818b2d24eb4cacc023fdb26f22fc7075"
+    },
+    {
+      "name": "coverage.json",
+      "bytes": 6858,
+      "sha256": "b3bee3c5c64d36f9b1befc6890b53e1d1a43d257ccdbdfbc087f5e38f09db65d"
+    },
+    {
+      "name": "metadata.json",
+      "bytes": 2116,
+      "sha256": "1f2fc31114e9813a99112083fa130f341098602ecfc4e1ca9dead57e8af0f303"
+    },
+    {
+      "name": "note.tex",
+      "bytes": 21815,
+      "sha256": "c118e46ff60b340db8f2d7de034032556cd3cf07ab45d9fb72d290e5c80e100e"
+    },
+    {
+      "name": "references.json",
+      "bytes": 3281,
+      "sha256": "3d27caaa3489fcc927fbb3cc7b6c3d2fa61530a3d87d31ed9ae0435249e6be4e"
+    },
+    {
+      "name": "verification.json",
+      "bytes": 1132,
+      "sha256": "84b074d991ef73a3ac83ebafa1b1365bd1a19c72866f4208e271ff92201910ce"
+    },
+    {
+      "name": "verify.py",
+      "bytes": 14282,
+      "sha256": "7b478e12c439f654446e3ccafcd532238e9c3f3d2c18d7f5a4497044e46a2da3"
+    }
+  ]
+}

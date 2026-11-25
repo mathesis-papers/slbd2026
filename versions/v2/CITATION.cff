@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it."
+title: "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43"
+authors:
+  - name: "Haobo Ma"
+  - name: "Wenlin Zhang"
+date-released: "2026-11-25"
+version: "2"
+url: "https://mathesis-omega-research.apps.chrono-ai.fun/papers/slbd2026?version=2"
+license: "CC-BY-4.0"

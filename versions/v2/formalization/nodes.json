@@ -1,0 +1,332 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:slbd2026:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "71b4592f31a0ce564acedcbee195fbd50f30bd8c",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"
+      },
+      "lineage": "collected:slbd2026:s1",
+      "macros": {
+        "\\KD": "\\operatorname{KD}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\ii": "\\mathrm{i}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "slbd2026",
+      "scope": "in_scope",
+      "statement": "For every real $\\lambda>-1$, $\\rho_\\lambda$ is a faithful KD-positive\ndensity matrix, and $X$ and $L_\\lambda$ are KD-real Hermitian matrices.\nThe unique SLD in \\eqref{eq:sld} is $L_\\lambda$, and\n\\begin{equation}\n I_{\\rm QF}(\\rho_\\lambda,X)\n    =\\frac{2\\lambda^2}{(2+\\lambda)(3+\\lambda)}.\n\\end{equation}\nIn particular, $\\lambda=1$ gives a counterexample with QFI $1/6$ and\ndensity eigenvalues $1/6$ (multiplicity three) and $1/12$ (multiplicity six).",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43",
+      "toolchain": null,
+      "version": 2,
+      "work": "slbd2026"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:slbd2026:2:s2",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "71b4592f31a0ce564acedcbee195fbd50f30bd8c",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"
+      },
+      "lineage": "collected:slbd2026:s2",
+      "macros": {
+        "\\KD": "\\operatorname{KD}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\ii": "\\mathrm{i}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "slbd2026",
+      "scope": "in_scope",
+      "statement": "Let $n\\ge2$ and $g=\\gcd(2,n)$. In dimension $n^2$, use labels in $\\mathbb Z/n\\mathbb Z$,\n$\\omega=e^{2\\pi\\ii/n}$, and the matrices $F,P,Q$ above with $1/3$ replaced\nby $1/n$. Set\n\\[\n \\rho_\\lambda=\\frac{I+\\lambda P}{n^2+n\\lambda},\\quad\n X=\\frac{nQ-I}{n-1},\\quad\n L_\\lambda=\\frac{2n\\lambda}{(n-1)(2+\\lambda)}\\ii[P,Q].\n\\]\nFor $\\lambda>-1$, these give faithful KD-positive states and KD-real\ngenerators and SLDs, with\n\\[\n I_{\\rm QF}=\\frac{4(n-g)\\lambda^2}{(n-1)^2(2+\\lambda)(n+\\lambda)}.\n\\]\nFor $n\\ge3$ and $\\lambda\\ne0$ this is positive. For odd $n$, it reduces to\n$4\\lambda^2/((n-1)(2+\\lambda)(n+\\lambda))$; for $n=2$ it vanishes.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43",
+      "toolchain": null,
+      "version": 2,
+      "work": "slbd2026"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:slbd2026:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "71b4592f31a0ce564acedcbee195fbd50f30bd8c",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"
+      },
+      "lineage": "collected:slbd2026:s3",
+      "macros": {
+        "\\KD": "\\operatorname{KD}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\ii": "\\mathrm{i}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "slbd2026",
+      "scope": "in_scope",
+      "statement": "In dimension nine put, for $0\\le t\\le1$,\n\\[\n \\sigma_t=\\frac{t}{3}P+\\frac{1-t}{6}(I-P),\\qquad\n M_t=\\frac{3(3t-1)}{1+t}H.\n\\]\nThen $\\sigma_t$ is KD-positive, $M_t$ is a KD-real SLD for the same $X$,\nand $I_{\\rm QF}=(3t-1)^2/(1+t)$. The state is faithful exactly when\n$0<t<1$. The endpoint states have ranks six and three and QFI $1$ and\n$2$, respectively; neither is pure.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43",
+      "toolchain": null,
+      "version": 2,
+      "work": "slbd2026"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:slbd2026:2:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "71b4592f31a0ce564acedcbee195fbd50f30bd8c",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"
+      },
+      "lineage": "collected:slbd2026:s4",
+      "macros": {
+        "\\KD": "\\operatorname{KD}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\ii": "\\mathrm{i}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "slbd2026",
+      "scope": "in_scope",
+      "statement": "For every square family in Corollary~\\ref{cor:square}, both original-basis\nprobability distributions are uniform and have zero phase derivatives at\n$\\theta=0$. Thus both classical Fisher informations vanish. When $n\\ge3$\nand $\\lambda\\ne0$, measuring the spectral projections of the KD-real SLD\ninstead attains the positive QFI.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43",
+      "toolchain": null,
+      "version": 2,
+      "work": "slbd2026"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:slbd2026:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "71b4592f31a0ce564acedcbee195fbd50f30bd8c",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"
+      },
+      "lineage": "collected:slbd2026:s5",
+      "macros": {
+        "\\KD": "\\operatorname{KD}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\ii": "\\mathrm{i}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "slbd2026",
+      "scope": "in_scope",
+      "statement": "For any pair of bases with nonzero overlaps, let $\\rho$ be a density\nmatrix in the real linear span of the Hermitian matrices diagonal in\n$A$ or in $B$. If $X$ and an SLD $L$ are KD-real, then\n$I_{\\rm QF}=0$ and $[\\rho,X]=0$.\nThis includes the states $\\rho=f_2(A)+g_2(B)$ of source (6.16), even without\nrestricting $X$ to that form. It also holds whenever $\\rho$ is diagonal in either original\nbasis, without the extra restrictions of the two mixed-state examples in\n\\cite[\\S6.3, pp.~44--45]{source}.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43",
+      "toolchain": null,
+      "version": 2,
+      "work": "slbd2026"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:slbd2026:2:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "71b4592f31a0ce564acedcbee195fbd50f30bd8c",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"
+      },
+      "lineage": "collected:slbd2026:s6",
+      "macros": {
+        "\\KD": "\\operatorname{KD}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\ii": "\\mathrm{i}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "slbd2026",
+      "scope": "in_scope",
+      "statement": "If the transition matrix can be made real by rephasing basis vectors,\nthe mixed-state exclusion holds for every KD-real density matrix:\na KD-real SLD has zero QFI. In particular, no counterexample exists\nin dimensions one or two.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43",
+      "toolchain": null,
+      "version": 2,
+      "work": "slbd2026"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:slbd2026:2:s7",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "71b4592f31a0ce564acedcbee195fbd50f30bd8c",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"
+      },
+      "lineage": "collected:slbd2026:s7",
+      "macros": {
+        "\\KD": "\\operatorname{KD}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\ii": "\\mathrm{i}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "slbd2026",
+      "scope": "in_scope",
+      "statement": "For the coordinate and Fourier bases of $\\mathbb C^{\\mathbb Z/p\\mathbb Z}$,\nwith $p$ prime, the mixed-state exclusion holds for every KD-real state.\nThe same conclusion holds for Haar-almost every pair of bases in any\nfixed finite dimension.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43",
+      "toolchain": null,
+      "version": 2,
+      "work": "slbd2026"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s8",
+      "contributor": null,
+      "identity": "collected:slbd2026:2:s8",
+      "kind": "paper",
+      "label": "Proposition",
+      "lean_source": {
+        "revision": "71b4592f31a0ce564acedcbee195fbd50f30bd8c",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"
+      },
+      "lineage": "collected:slbd2026:s8",
+      "macros": {
+        "\\KD": "\\operatorname{KD}",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\ii": "\\mathrm{i}"
+      },
+      "next_step": "Formalization work is coordinated through the shared requests.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "slbd2026",
+      "scope": "in_scope",
+      "statement": "Suppose a unital complex star-subalgebra $\\mathcal A$ of matrices has\nKD-real Hermitian part. For every faithful density matrix\n$\\rho\\in\\mathcal A$ and every Hermitian $X\\in\\mathcal A$, the unique SLD\nbelongs to $\\mathcal A$ and is KD-real. Its QFI is positive exactly when\n$[\\rho,X]\\ne0$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43",
+      "toolchain": null,
+      "version": 2,
+      "work": "slbd2026"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{array,longtable}
+\hypersetup{colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\KD}{\operatorname{KD}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\title{A KD-positive counterexample to the SLD conjecture\\
+in arXiv:2511.01996v2, \S6.3 after (6.23), p.~43}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{3 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We refute the mixed-state conjecture of Spriet, Langrenez, Brummelhuis and
+De Bi\`evre in arXiv:2511.01996v2, \S6.3 immediately after (6.23), p.~43: a KD-real
+state and generator can have a KD-real symmetric logarithmic derivative
+with nonzero quantum Fisher information. Two rank-three projections in
+dimension nine give a faithful KD-positive state with quantum Fisher
+information $1/6$. The same construction gives an explicit one-parameter
+family, including two singular mixed endpoints, and counterexamples in
+every square dimension $n^2$ with $n\ge3$. We also prove that the exclusion
+does hold for every state in the real span of the two basis-diagonal
+spaces, for cyclic-prime Fourier bases, and for all KD-real states when
+the transition matrix is real up to basis phases. It also holds for
+Haar-almost every pair of bases in each finite dimension.
+\end{abstract}
+
+\section{The conjecture and conventions}
+The unnumbered conjecture in \cite[\S6.3, after (6.23)]{source} asserts that
+the symmetric logarithmic derivative (SLD) of a KD-real state under a KD-real
+generator cannot itself be KD-real when the quantum Fisher information is
+nonzero. Its journal locator is \S6.3, after (168). We give a counterexample
+with strictly positive density matrix and strictly positive KD distribution.
+For background on KD representations, see \cite[\S II]{survey}.
+
+Let $A=(a_x)$ and $B=(b_k)$ be orthonormal bases with all overlaps nonzero.
+The left KD symbol and distribution are, respectively,
+\[
+ S_C(x,k)=\frac{\langle a_x,Cb_k\rangle}{\langle a_x,b_k\rangle},
+ \qquad q_C(x,k)=|\langle a_x,b_k\rangle|^2S_C(x,k).
+\]
+A Hermitian matrix is KD-real if every $S_C(x,k)$ is real; a density
+matrix is KD-positive if every $q_C(x,k)$ is nonnegative.
+For $\rho(\theta)=e^{-\ii\theta X}\rho e^{\ii\theta X}$, our normalization is
+\begin{equation}\label{eq:sld}
+ \frac{L\rho+\rho L}{2}=\ii[\rho,X],\qquad
+ I_{\rm QF}=\Tr(\rho L^2).
+\end{equation}
+These are the defining SLD and QFI conventions of \cite[Appendix E]{source}.
+In a density eigenbasis the defining equation gives
+$L_{jk}=2\ii(p_j-p_k)X_{jk}/(p_j+p_k)$ when $p_j+p_k>0$;
+the illustrative entry formula preceding (6.29) must include this factor $2$.
+All formulas below use \eqref{eq:sld}.
+
+\section{Two projections and the counterexample}
+All coordinate and frequency labels below are in $\mathbb F_3$. Put
+$\omega=(-1+\ii\sqrt3)/2$, and index $\mathbb C^9$ by $(u,v)\in\mathbb F_3^2$.
+Take $A$ to be the coordinate basis and set
+\[
+ F_{(u,v),(r,s)}=\langle a_{u,v},b_{r,s}\rangle
+     =\tfrac13\omega^{ur+vs}.
+\]
+The identity $\sum_{j=0}^2\omega^{mj}=3\,\mathbf1_{m=0}$ proves $F^*F=I$;
+all overlaps have modulus $1/3$.
+Define matrices
+\begin{equation}\label{eq:projections}
+ \begin{split}
+ P_{(u,v),(a,b)}&=\tfrac13\mathbf1_{v=b}\omega^{v(u-a)},\\
+ Q_{(u,v),(a,b)}&=\tfrac13\mathbf1_{u=a}\omega^{u(b-v)}.
+ \end{split}
+\end{equation}
+Each fixed-$v$ block of $P$, and each fixed-$u$ block of $Q$, is a rank-one
+orthogonal projection. Thus $P^2=P=P^*$, $Q^2=Q=Q^*$ and
+$\Tr P=\Tr Q=3$. Introduce
+\begin{equation}\label{eq:family}
+ N_\lambda=9+3\lambda,\quad
+ \rho_\lambda=\frac{I+\lambda P}{N_\lambda},\quad
+ X=\frac{3Q-I}{2},\quad
+ H=\ii[P,Q],\quad
+ L_\lambda=\frac{3\lambda}{2+\lambda}H.
+\end{equation}
+
+\begin{theorem}\label{thm:main}
+For every real $\lambda>-1$, $\rho_\lambda$ is a faithful KD-positive
+density matrix, and $X$ and $L_\lambda$ are KD-real Hermitian matrices.
+The unique SLD in \eqref{eq:sld} is $L_\lambda$, and
+\begin{equation}\label{eq:qfi}
+ I_{\rm QF}(\rho_\lambda,X)
+    =\frac{2\lambda^2}{(2+\lambda)(3+\lambda)}.
+\end{equation}
+In particular, $\lambda=1$ gives a counterexample with QFI $1/6$ and
+density eigenvalues $1/6$ (multiplicity three) and $1/12$ (multiplicity six).
+\end{theorem}
+
+\begin{proof}
+The eigenvalues of $\rho_\lambda$ are $(1+\lambda)/N_\lambda$ on
+$\operatorname{ran}P$ and $1/N_\lambda$ on $\ker P$, so they are positive
+and their sum, with multiplicities, is one.
+
+We compute the symbols explicitly. Summing first in the coordinate on
+which each projection acts gives
+\begin{equation}\label{eq:symbols}
+ S_P((u,v),(r,s))=\mathbf1_{r=v},\qquad
+ S_Q((u,v),(r,s))=\mathbf1_{s=-u}.
+\end{equation}
+For the product, direct substitution in \eqref{eq:projections} yields
+\[
+ (PQ)_{(u,v),(a,b)}=\tfrac19\omega^{v(u-a)+a(b-v)}.
+\]
+In $(PQF)_{(u,v),(r,s)}$, summing over $b$ forces $a=-s$.
+Dividing by $F_{(u,v),(r,s)}$ then gives
+\begin{equation}\label{eq:product}
+ S_{PQ}=\tfrac13\omega^z,\qquad S_{QP}=\tfrac13\omega^{-z},
+ \qquad z=(u+s)(v-r).
+\end{equation}
+For $QP$, the corresponding sum over $a$ forces $b=r$.
+Consequently,
+\[
+ S_{\rho_\lambda}=\frac{1+\lambda\mathbf1_{r=v}}{N_\lambda},\quad
+ S_X=\frac{3\mathbf1_{s=-u}-1}{2},\quad
+ S_H=\frac{\ii}{3}(\omega^z-\omega^{-z})\in\{0,\pm1/\sqrt3\}.
+\]
+These symbols are real, and $S_{\rho_\lambda}>0$. Since
+$q_C=S_C/9$ in these bases, $\rho_\lambda$ is strictly KD-positive.
+The three matrices are Hermitian because $P,Q$ are Hermitian and
+$\ii[P,Q]$ is Hermitian.
+
+For the SLD equation, $PH+HP=H$ follows by expanding the commutator and
+using $P^2=P$. Thus
+\[
+ \frac{\rho_\lambda L_\lambda+L_\lambda\rho_\lambda}{2}
+ =\frac{2+\lambda}{2N_\lambda}L_\lambda
+ =\frac{3\lambda}{2N_\lambda}\ii[P,Q]
+ =\ii[\rho_\lambda,X].
+\]
+If $D$ is the difference of two SLDs, diagonalizing the positive matrix
+$\rho_\lambda$ gives $(p_j+p_k)D_{jk}=0$ with $p_j,p_k>0$, hence $D=0$.
+
+It remains to evaluate the trace, without numerical diagonalization.
+Multiplying the product formula above by $P$ gives
+\[
+ (PQP)_{(u,v),(a,b)}
+ =\frac{\omega^{uv-ab}}{27}\sum_{c=0}^2\omega^{2c(b-v)}
+ =\tfrac13P_{(u,v),(a,b)}.
+\]
+Also $(PQ)_{(u,v),(u,v)}=1/9$, so $\Tr(PQ)=1$ and
+$\Tr(PQPQ)=1/3$. Expanding $H^2$ gives
+\[
+ H^2=PQ+QP-PQP-QPQ,\qquad
+ \Tr H^2=\tfrac43,\quad \Tr(PH^2)=\tfrac23.
+\]
+Therefore
+\[
+ \Tr(\rho_\lambda L_\lambda^2)
+ =\frac{9\lambda^2}{(2+\lambda)^2N_\lambda}
+       \left(\tfrac43+\tfrac{2\lambda}{3}\right)
+ =\frac{2\lambda^2}{(2+\lambda)(3+\lambda)}.
+\]
+The value is positive whenever $\lambda\ne0$, proving the assertion.
+\end{proof}
+
+\begin{corollary}\label{cor:square}
+Let $n\ge2$ and $g=\gcd(2,n)$. In dimension $n^2$, use labels in $\mathbb Z/n\mathbb Z$,
+$\omega=e^{2\pi\ii/n}$, and the matrices $F,P,Q$ above with $1/3$ replaced
+by $1/n$. Set
+\[
+ \rho_\lambda=\frac{I+\lambda P}{n^2+n\lambda},\quad
+ X=\frac{nQ-I}{n-1},\quad
+ L_\lambda=\frac{2n\lambda}{(n-1)(2+\lambda)}\ii[P,Q].
+\]
+For $\lambda>-1$, these give faithful KD-positive states and KD-real
+generators and SLDs, with
+\[
+ I_{\rm QF}=\frac{4(n-g)\lambda^2}{(n-1)^2(2+\lambda)(n+\lambda)}.
+\]
+For $n\ge3$ and $\lambda\ne0$ this is positive. For odd $n$, it reduces to
+$4\lambda^2/((n-1)(2+\lambda)(n+\lambda))$; for $n=2$ it vanishes.
+\end{corollary}
+\begin{proof}
+Character orthogonality gives the two projection-symbol formulas in
+\eqref{eq:symbols} unchanged and the product-symbol formulas
+$S_{PQ}=\omega^z/n$, $S_{QP}=\omega^{-z}/n$. Thus $\ii[P,Q]$ is KD-real.
+The rank of each projection is $n$, so the displayed density is faithful
+and normalized, with positive symbol
+$(1+\lambda\mathbf1_{r=v})/(n^2+n\lambda)$.
+For all $n$, direct multiplication gives
+\[
+ (PQP)_{(u,v),(a,b)}
+ =\frac{\omega^{uv-ab}}{n^3}\sum_{c=0}^{n-1}\omega^{2c(b-v)}.
+\]
+Its nonzero entries have $2(b-v)=0$ modulo $n$. In the trace
+\[
+ \Tr(PQPQ)=\sum_{u,v,a,b}(PQP)_{(u,v),(a,b)}Q_{(a,b),(u,v)},
+\]
+$Q$ forces $a=u$. For each $(u,v)$ there are exactly $g$ choices of $b$,
+each contributing $1/n^3$, because the remaining phase is
+$\omega^{2u(v-b)}=1$. Hence $\Tr(PQPQ)=g/n$, while
+$\Tr(PQ)=1$ as before. Expanding $H^2$ and using trace cyclicity gives
+$\Tr H^2=2(n-g)/n$ and $\Tr(PH^2)=(n-g)/n$.
+The identity $PH+HP=H$ proves the SLD equation with the displayed
+coefficient; positivity proves uniqueness as before. Substitution of these
+two traces into $\Tr(\rho_\lambda L_\lambda^2)$ gives the stated formula.
+\end{proof}
+
+\begin{corollary}\label{cor:endpoints}
+In dimension nine put, for $0\le t\le1$,
+\[
+ \sigma_t=\frac{t}{3}P+\frac{1-t}{6}(I-P),\qquad
+ M_t=\frac{3(3t-1)}{1+t}H.
+\]
+Then $\sigma_t$ is KD-positive, $M_t$ is a KD-real SLD for the same $X$,
+and $I_{\rm QF}=(3t-1)^2/(1+t)$. The state is faithful exactly when
+$0<t<1$. The endpoint states have ranks six and three and QFI $1$ and
+$2$, respectively; neither is pure.
+\end{corollary}
+\begin{proof}
+The two spectral coefficients are $t/3$ and $(1-t)/6$; their sum is
+$(1+t)/6>0$. Since $PH+HP=H$, the Jordan equation on the two spectral
+subspaces gives $M_t$ directly, including the endpoints. Its QFI follows
+from $\Tr H^2=4/3$ and $\Tr(PH^2)=2/3$.
+The symbol of $\sigma_t$ is $t/3$ when $r=v$ and $(1-t)/6$ otherwise.
+These numbers are nonnegative, proving KD positivity. For $t<1$ this
+is the family in Theorem~\ref{thm:main} with
+$\lambda=(3t-1)/(1-t)$; the direct calculation also covers $t=1$.
+\end{proof}
+
+\begin{corollary}\label{cor:measurement}
+For every square family in Corollary~\ref{cor:square}, both original-basis
+probability distributions are uniform and have zero phase derivatives at
+$\theta=0$. Thus both classical Fisher informations vanish. When $n\ge3$
+and $\lambda\ne0$, measuring the spectral projections of the KD-real SLD
+instead attains the positive QFI.
+\end{corollary}
+\begin{proof}
+The diagonals of $P$ in the two bases are $1/n$, and those of
+$[P,Q]$ are zero. In the coordinate basis this follows from
+$(PQ)_{xx}=(QP)_{xx}=1/n^2$. In the Fourier basis the diagonal of $PQ$
+is $n^{-4}\sum_{u,v}\omega^{(u+s)(v-r)}=1/n^2$, since summing over $v$
+forces $u=-s$; $QP$ has the same diagonal. Thus the probabilities are
+$1/n^2$ and their derivatives vanish. If $E_j$ is an SLD eigenspace
+projection with eigenvalue $\ell_j$, then
+$\dot p_j=\Tr(E_j\{\rho,L\}/2)=\ell_jp_j$.
+Faithfulness gives $p_j>0$, so the measurement's Fisher information is
+$\sum_j\dot p_j^2/p_j=\sum_j\ell_j^2p_j=\Tr(\rho L^2)$.
+\end{proof}
+
+\section{Mixed-state conditions that do imply exclusion}
+\begin{corollary}\label{cor:diagonal}
+For any pair of bases with nonzero overlaps, let $\rho$ be a density
+matrix in the real linear span of the Hermitian matrices diagonal in
+$A$ or in $B$. If $X$ and an SLD $L$ are KD-real, then
+$I_{\rm QF}=0$ and $[\rho,X]=0$.
+This includes the states $\rho=f_2(A)+g_2(B)$ of source (6.16), even without
+restricting $X$ to that form. It also holds whenever $\rho$ is diagonal in either original
+basis, without the extra restrictions of the two mixed-state examples in
+\cite[\S6.3, pp.~44--45]{source}.
+\end{corollary}
+\begin{proof}
+Write $F_{xk}=\langle a_x,b_k\rangle$. For KD-real Hermitian $X,L$,
+\[
+ (XL)_{xx}=\sum_k(XF)_{xk}\overline{(LF)_{xk}}
+ =\sum_k|F_{xk}|^2S_X(x,k)S_L(x,k)\in\mathbb R.
+\]
+Thus $[X,L]$ has zero diagonal in $A$. Interchanging $A,B$ conjugates
+the Hermitian symbols and proves the same in $B$. Consequently
+$\Tr(\rho[X,L])=0$. Multiplying \eqref{eq:sld} by $L$ and taking the trace gives
+$\Tr(\rho L^2)=\ii\Tr(\rho[X,L])=0$.
+Positivity implies $L\rho^{1/2}=0$ and hence $L\rho=\rho L=0$;
+\eqref{eq:sld} now yields $[\rho,X]=0$. No faithfulness is needed.
+\end{proof}
+
+\begin{corollary}\label{cor:real}
+If the transition matrix can be made real by rephasing basis vectors,
+the mixed-state exclusion holds for every KD-real density matrix:
+a KD-real SLD has zero QFI. In particular, no counterexample exists
+in dimensions one or two.
+\end{corollary}
+\begin{proof}
+Symbols are unchanged by basis rephasings, so assume $F$ is real.
+KD reality and nonzero real overlaps make $CF$ real entrywise, so
+$C=(CF)F^{\mathsf T}$ is real. Conversely every real Hermitian $C$ is
+KD-real. For such $\rho,X,L$ the Jordan side of \eqref{eq:sld} is real,
+and the commutator side is purely imaginary. Both vanish, so
+$\Tr(\rho L^2)=\Tr(L\{\rho,L\}/2)=0$.
+For a $2\times2$ unitary with nonzero entries, rephase its first row
+and first column to be positive real. Column orthogonality forces the
+remaining entry to be real. In dimension one all matrices commute.
+\end{proof}
+
+\begin{corollary}\label{cor:prime}
+For the coordinate and Fourier bases of $\mathbb C^{\mathbb Z/p\mathbb Z}$,
+with $p$ prime, the mixed-state exclusion holds for every KD-real state.
+The same conclusion holds for Haar-almost every pair of bases in any
+fixed finite dimension.
+\end{corollary}
+\begin{proof}
+By \cite[Theorems 3.1 and 4.1]{fourier}, the KD-real Hermitian space is
+the real span of the pure KD-positive projectors, which correspond to
+subgroup cosets and their character modulations. The only subgroups of
+$\mathbb Z/p\mathbb Z$ are $\{0\}$ and the whole group. Their projectors
+are exactly those of the two original bases. Thus every KD-real state
+has the form required by Corollary~\ref{cor:diagonal}.
+For the second assertion, \cite[Theorem 1, (7)]{generic} states that the
+KD-real Hermitian space equals this same basis-projector span for
+Haar-almost every transition matrix. Apply Corollary~\ref{cor:diagonal} again.
+\end{proof}
+
+\begin{proposition}\label{prop:algebra}
+Suppose a unital complex star-subalgebra $\mathcal A$ of matrices has
+KD-real Hermitian part. For every faithful density matrix
+$\rho\in\mathcal A$ and every Hermitian $X\in\mathcal A$, the unique SLD
+belongs to $\mathcal A$ and is KD-real. Its QFI is positive exactly when
+$[\rho,X]\ne0$.
+\end{proposition}
+\begin{proof}
+The map $J_\rho(C)=\{\rho,C\}/2$ preserves the finite-dimensional real
+space $\mathcal A_{\rm sa}$. If $\rho\ge mI>0$, then
+$\Tr(CJ_\rho(C))=\Tr(\rho C^2)\ge m\Tr(C^2)>0$ for $C\ne0$.
+It is therefore invertible on that space, and its inverse sends
+$\ii[\rho,X]\in\mathcal A_{\rm sa}$ to the desired $L$.
+The same inequality on all Hermitian matrices gives uniqueness and
+$I_{\rm QF}>0$ exactly when $L\ne0$, equivalently $[\rho,X]\ne0$.
+\end{proof}
+
+The square construction also illustrates this mechanism. With
+$x,r\in(\mathbb Z/n\mathbb Z)^2$, put $J(r_1,r_2)=(-r_2,r_1)$ and
+$W_ra_x=\omega^{(Jr)\cdot x}a_{x+r}$. Direct application to $a_x$ gives
+$W_rW_s=\omega^{(Jr)\cdot s}W_{r+s}$ and $W_r^*=W_{-r}$.
+Their span is a star-algebra, and
+$S_{W_r}(x,k)=\omega^{(Jr)\cdot x-k\cdot r}$.
+In a Hermitian linear combination the coefficients at $r$ and $-r$
+are conjugate, so the symbol is real. Indeed the $W_r$ are linearly
+independent, since $\Tr(W_r^*W_s)=n^2\mathbf1_{r=s}$.
+The averages $n^{-1}\sum_aW_{(a,0)}$ and
+$n^{-1}\sum_bW_{(0,b)}$ are precisely $P$ and $Q$.
+For $n\ge3$, the generators $W_{(1,0)}$ and $W_{(0,1)}$ do not commute,
+as their multiplication phases differ by $\omega^2\ne1$.
+Fourier KD-real spaces and their relation to KD-positive states are studied
+in \cite{fourier}; here the Jordan-map argument supplies the SLD conclusion.
+
+\section{Coverage and verification}
+At $\lambda=1$, $q_{\rho_1}$ takes the values $1/54$ and $1/108$.
+Corollary~\ref{cor:measurement} gives the zero classical Fisher information
+in the original two bases, consistently with the source Proposition 6.3.
+
+The pure-state conclusion of \cite[Proposition 6.5]{source} retains its
+scope. Here $(\rho_1)_{(0,0),(1,0)}=1/36\ne0$, so the basis-diagonal
+hypotheses of the two source examples do not apply. The following table
+distinguishes the source statements and the extensions established here.
+Only \texttt{slbd2026} is a problem identifier for these statements.
+\begin{small}
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}p{.36\linewidth}p{.23\linewidth}p{.35\linewidth}@{}}
+\textbf{Source item} & \textbf{Coverage} & \textbf{Reason}\\\hline
+\S6.3 after (6.23), p.~43; all-mixed question, p.~45
+ & Refuted-and-corrected & Theorem~\ref{thm:main}; Corollaries~\ref{cor:square}, \ref{cor:endpoints}.\\
+Proposition 6.3; phase-insensitive examples (6.16)
+ & Prior proof cited & Source proof; Corollary~\ref{cor:measurement} proves the square family's marginals.\\
+Lemma 6.4: zero QFI iff commutation
+ & Prior proof cited & Source proof; positive-QFI conditions are explicit above.\\
+Proposition 6.5: pure-state exclusion
+ & Prior proof cited & Unchanged hypotheses; all nontrivial states above are mixed.\\
+Two mixed examples, pp.~44--45, after (6.29)
+ & Proved & Corollary~\ref{cor:diagonal} removes both examples' extra restrictions.\\
+Real transition matrices, pp.~43,45
+ & Proved & Corollary~\ref{cor:real} permits every KD-real state.\\
+Possibility of a KD-real observable with positive FI, p.~45
+ & Proved & Corollary~\ref{cor:measurement}: the KD-real SLD attains QFI.\\
+Postselected metrology remark, p.~45, refs.~[42,70]
+ & Not covered & Different model and KD distribution; cf.\ \cite{postselected}.\\
+Fourier KD-real structure in source ref.~[23]
+ & Prior proof cited & \cite{fourier}, \S4; Corollary~\ref{cor:prime} and Proposition~\ref{prop:algebra} give SLD consequences.\\
+Generic KD-real structure in source ref.~[69]
+ & Prior proof cited & \cite{generic}, Theorem 1; Corollary~\ref{cor:prime} gives Haar-almost-sure exclusion.\\
+LCA-group conjectures in source ref.~[24], equations (11)--(12)
+ & Not covered & \cite{lca}, p.~7; finite matrix SLD identities do not settle infinite-group closure questions.\\
+\end{longtable}
+\end{small}
+The least counterexample dimension is between three and nine, by
+Corollary~\ref{cor:real} and Theorem~\ref{thm:main}; its exact value and a
+full classification of bases satisfying mixed-state exclusion are not
+determined here.
+
+The pinned Lean file
+\href{https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean}{\texttt{KirkwoodDiracSLDRefutation.lean}}
+contains theorem \texttt{result} of type $\neg\,\mathtt{claim}$ in namespace
+\texttt{SprietKirkwoodDiracSLD}, within the module namespace.
+It formalizes the refutation with the concrete $\lambda=1$ matrices.
+Its \texttt{fisherSLD} convention is one quarter of the QFI in
+\eqref{eq:sld}. The linked
+\href{https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/FisherDiscord/Defs.lean}{\texttt{FisherDiscord/Defs.lean}}
+defines \texttt{IsSLD} and \texttt{fisherSLD};
+\href{https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/SLDSpectralEnergy.lean}{\texttt{SLDSpectralEnergy.lean}}
+defines \texttt{IsDensity} as positive semidefinite with trace one.
+The parameter, square-dimension, endpoint, exclusion and algebra results
+are written proofs above, not additional declarations of these files.
+The accompanying \texttt{verify.py} checks matrix identities over
+$\mathbb Q(\sqrt3,\ii)$: six dimension-nine rational parameters,
+the two singular endpoints, square orders $n=2,4,6$, and the trace
+obstruction in Corollary~\ref{cor:diagonal}. These finite checks are
+distinct from the full parameter and arbitrary-dimension proofs.
+
+\begingroup\small
+\begin{thebibliography}{9}
+\bibitem{source}
+M. Spriet, C. Langrenez, R. Brummelhuis and S. De Bi\`evre,
+\emph{What Is Special About the Kirkwood--Dirac Distributions?
+Only They Produce Natural Conditional Expectations},
+Symmetry \textbf{18} (2026), 1008,
+\href{https://doi.org/10.3390/sym18061008}{doi:10.3390/sym18061008}.
+Posing version: \href{https://arxiv.org/abs/2511.01996v2}{arXiv:2511.01996v2},
+\S6.3 after (6.23), p.~43; mixed-state question, p.~45.
+\bibitem{survey}
+D. R. M. Arvidsson-Shukur, W. F. Braasch Jr., S. De Bi\`evre, J. Dressel,
+A. N. Jordan, C. Langrenez, M. Lostaglio, J. S. Lundeen and N. Yunger Halpern,
+\emph{Properties and applications of the Kirkwood--Dirac distribution},
+New Journal of Physics \textbf{26} (2024), 121201,
+\href{https://doi.org/10.1088/1367-2630/ada05d}{doi:10.1088/1367-2630/ada05d};
+\href{https://arxiv.org/abs/2403.18899v2}{arXiv:2403.18899v2}, \S II.
+\bibitem{fourier}
+S. De Bi\`evre, C. Langrenez and D. Radchenko,
+\emph{The Kirkwood--Dirac Representation Associated to the Fourier
+Transform for Finite Abelian Groups: Positivity},
+Annales Henri Poincar\'e \textbf{27} (2026), 3093--3112 (online 2 September 2025),
+\href{https://doi.org/10.1007/s00023-025-01614-7}{doi:10.1007/s00023-025-01614-7};
+\href{https://arxiv.org/abs/2501.12252v2}{arXiv:2501.12252v2}, Theorems 3.1 and 4.1.
+\bibitem{postselected}
+S. Das, S. Modak and M. N. Bera,
+\emph{Saturating quantum advantages in postselected metrology with the
+positive Kirkwood--Dirac distribution},
+Physical Review A \textbf{107} (2023), 042413,
+\href{https://doi.org/10.1103/PhysRevA.107.042413}{doi:10.1103/PhysRevA.107.042413}.
+\bibitem{lca}
+M. Spriet, \emph{Characterizing the Kirkwood--Dirac positivity on second
+countable LCA groups},
+\href{https://arxiv.org/abs/2507.23628v3}{arXiv:2507.23628v3}, p.~7.
+\bibitem{generic}
+C. Langrenez, W. Salmon, S. De Bi\`evre, J. J. Thio, C. K. Long and
+D. R. M. Arvidsson-Shukur,
+\emph{Almost no experiments have classical Kirkwood--Dirac representations},
+\href{https://arxiv.org/abs/2405.17557v2}{arXiv:2405.17557v2}
+(2 July 2026), Theorem 1, (7).
+\end{thebibliography}
+\endgroup
+\medskip\noindent\small
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+\end{document}

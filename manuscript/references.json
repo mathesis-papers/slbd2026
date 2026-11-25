@@ -1,0 +1,58 @@
+{
+  "checked_on": "2026-11-03",
+  "references": [
+    {
+      "key": "source",
+      "doi": "10.3390/sym18061008",
+      "primary_url": "https://mdpi-res.com/d_attachment/symmetry/symmetry-18-01008/article_deploy/symmetry-18-01008.pdf",
+      "posing_url": "https://arxiv.org/abs/2511.01996v2",
+      "posing_date": "2026-05-27",
+      "journal_date": "2026-06-11",
+      "locators": "arXiv Section 6.3, pp. 41-45, conjecture after (6.23), p. 43; Appendix E; journal conjecture after (168)",
+      "coverage": "Posed mixed-state claim; prior pure-state exclusion and phase-insensitivity results; SLD and QFI definitions",
+      "bibliographic_metadata": "Title, four authors, journal, volume and article number agree with the primary PDF and Crossref"
+    },
+    {
+      "key": "survey",
+      "doi": "10.1088/1367-2630/ada05d",
+      "primary_url": "https://arxiv.org/abs/2403.18899v2",
+      "locators": "Section II",
+      "coverage": "KD representations and background definitions",
+      "bibliographic_metadata": "Nine authors, title, New Journal of Physics 26 (2024), 121201 agree with Crossref"
+    },
+    {
+      "key": "fourier",
+      "doi": "10.1007/s00023-025-01614-7",
+      "primary_url": "https://arxiv.org/abs/2501.12252v2",
+      "online_date": "2025-09-02",
+      "locators": "Theorems 3.1 and 4.1; Sections 3 and 4",
+      "coverage": "Pure KD-positive subgroup projectors and the KD-real real-span theorem; these imply the cyclic-prime exclusion with Corollary 5",
+      "bibliographic_metadata": "Three authors, title, Annales Henri Poincare 27 (2026), 3093-3112, and online date agree with Crossref"
+    },
+    {
+      "key": "postselected",
+      "doi": "10.1103/PhysRevA.107.042413",
+      "primary_url": "https://doi.org/10.1103/PhysRevA.107.042413",
+      "abstract_url": "https://api.figshare.com/v2/articles/33876328",
+      "publication_date": "2023-04-11",
+      "coverage": "Positive-KD postselected metrology is a separate measurement model, not the fixed-basis SLD statement",
+      "bibliographic_metadata": "Das, Modak and Bera, title, Physical Review A 107 (2023), 042413 and publication date agree with Crossref; abstract agrees with the linked figshare record"
+    },
+    {
+      "key": "generic",
+      "primary_url": "https://arxiv.org/abs/2405.17557v2",
+      "first_version_date": "2024-05-27",
+      "version_date": "2026-07-02",
+      "locators": "Theorem 1, equation (7); pp. 2-3",
+      "coverage": "For Haar-almost every transition matrix, the KD-real Hermitian space is the real span of the two original basis-projector families; Corollary 7 applies Corollary 5 to give mixed-state SLD exclusion",
+      "bibliographic_metadata": "Six authors, current title and dates agree with the primary PDF and arXiv submission history; cited under the earlier title The set of Kirkwood-Dirac positive states is almost always minimal in the posing source reference [69]"
+    },
+    {
+      "key": "lca",
+      "primary_url": "https://arxiv.org/abs/2507.23628v3",
+      "locators": "Page 7, equations (11)-(12)",
+      "coverage": "LCA-group real-span and convex-hull conjectures; not settled by finite matrix SLD identities",
+      "bibliographic_metadata": "Matéo Spriet, title and conjecture locators agree with the primary PDF"
+    }
+  ]
+}

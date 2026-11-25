@@ -1,0 +1,15 @@
+{
+  "id": "slbd2026",
+  "revision": 2,
+  "problem_ids": ["slbd2026"],
+  "topic": "The mixed-state KD-real SLD exclusion conjecture after (6.23) in arXiv:2511.01996v2, Section 6.3",
+  "title": "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43",
+  "creators": [
+    {"name": "Haobo Ma", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Wenlin Zhang", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "We refute the mixed-state conjecture of Spriet, Langrenez, Brummelhuis and De Bièvre in arXiv:2511.01996v2, Section 6.3 immediately after (6.23), p. 43: a KD-real state and generator can have a KD-real symmetric logarithmic derivative with nonzero quantum Fisher information. Two rank-three projections in dimension nine give a faithful KD-positive state with quantum Fisher information 1/6. The construction gives a one-parameter family, two singular mixed endpoints, and counterexamples in every square dimension n^2 with n>=3. Exclusion holds for states in the real span of the two basis-diagonal spaces, for cyclic-prime Fourier bases, and for all KD-real states when the transition matrix is real up to basis phases. Exclusion also holds for Haar-almost every pair of bases in each finite dimension.",
+  "summary": "Complete written proofs give square-dimensional counterexamples, endpoint states, SLD-optimal measurements, mixed-state exclusion conditions, including Haar-almost every pair of bases, and a star-algebra mechanism. The least counterexample dimension lies between three and nine. The pinned Lean result covers the concrete dimension-nine lambda=1 refutation. Exact arithmetic checks six rational parameters, two endpoints and square orders 2, 4 and 6. The coverage table separates these statements from cited pure-state and Fourier results and from questions not covered.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"
+}

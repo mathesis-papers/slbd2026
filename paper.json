@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 97761,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "53e08474b35fa77c9d5892fb0a4a37bb640f74f137ebabc100a219e436e3470c",
+      "sha256": "53e08474b35fa77c9d5892fb0a4a37bb640f74f137ebabc100a219e436e3470c"
+    },
+    "source": {
+      "bytes": 19379,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "9d85fec16d864e0a57e3fe851b8f59513cf6243eca9903e00173644161e8fcc3",
+      "sha256": "9d85fec16d864e0a57e3fe851b8f59513cf6243eca9903e00173644161e8fcc3"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "We refute the mixed-state conjecture of Spriet, Langrenez, Brummelhuis and De Bièvre in arXiv:2511.01996v2, Section 6.3 immediately after (6.23), p. 43: a KD-real state and generator can have a KD-real symmetric logarithmic derivative with nonzero quantum Fisher information. Two rank-three projections in dimension nine give a faithful KD-positive state with quantum Fisher information 1/6. The construction gives a one-parameter family, two singular mixed endpoints, and counterexamples in every square dimension n^2 with n>=3. Exclusion holds for states in the real span of the two basis-diagonal spaces, for cyclic-prime Fourier bases, and for all KD-real states when the transition matrix is real up to basis phases. Exclusion also holds for Haar-almost every pair of bases in each finite dimension.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "71b4592f31a0ce564acedcbee195fbd50f30bd8c",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 97761,
+      "sha256": "53e08474b35fa77c9d5892fb0a4a37bb640f74f137ebabc100a219e436e3470c",
+      "url": "/api/v1/collected-papers/slbd2026/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-25T19:02:07.558610821Z",
+    "record": "slbd2026",
+    "repository_name": "slbd2026",
+    "source": {
+      "bytes": 19379,
+      "sha256": "9d85fec16d864e0a57e3fe851b8f59513cf6243eca9903e00173644161e8fcc3",
+      "url": "/api/v1/collected-papers/slbd2026/files/source?version=2"
+    },
+    "title": "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-25T19:02:07.558610821Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "slbd2026"
+  }
+}

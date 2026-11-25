@@ -1,0 +1,119 @@
+{
+  "problem_ids": ["slbd2026"],
+  "posing_source": "https://arxiv.org/abs/2511.01996v2",
+  "posing_date": "2026-05-27",
+  "journal_source": "https://doi.org/10.3390/sym18061008",
+  "coverage": [
+    {
+      "statement": "Unnumbered mixed-state KD-real SLD exclusion conjecture and the all-mixed-state question",
+      "locator": "Section 6.3 after (6.23), p. 43; end-of-section question, p. 45; journal after (168)",
+      "status": "refuted-and-corrected",
+      "proof": "Theorem 1: faithful dimension-nine counterexample, QFI 1/6 at lambda=1",
+      "lean_declaration": "D5.S3.Quantum.Information.KirkwoodDiracSLDRefutation.SprietKirkwoodDiracSLD.result"
+    },
+    {
+      "statement": "Faithful KD-positive family for every real lambda>-1",
+      "locator": "Theorem 1",
+      "status": "proved",
+      "proof": "Written projection and symbol proof; finite checks at six rational parameters",
+      "qfi": "2 lambda^2 / ((2+lambda)(3+lambda))"
+    },
+    {
+      "statement": "Counterexamples in every square dimension n^2 with n>=3, including even n",
+      "locator": "Corollary 2",
+      "status": "proved",
+      "proof": "Written character-sum proof using Tr(PQPQ)=gcd(2,n)/n; finite checks at orders 2,4,6",
+      "qfi": "4 (n-gcd(2,n)) lambda^2 / ((n-1)^2 (2+lambda)(n+lambda))"
+    },
+    {
+      "statement": "Closed dimension-nine state segment, including singular mixed endpoints",
+      "locator": "Corollary 3",
+      "status": "proved",
+      "proof": "Direct Jordan equation and positive-symbol proof at every t in [0,1]; finite checks t=0,1/3,1",
+      "qfi": "(3t-1)^2/(1+t); endpoint ranks 6 and 3 with QFI 1 and 2"
+    },
+    {
+      "statement": "Zero classical FI in the original bases",
+      "locator": "Source Proposition 6.3 and examples (6.16), pp. 41-43; note Corollary 4",
+      "status": "prior proof cited",
+      "proof": "Source theorem; Corollary 4 proves uniform marginals and zero tangent diagonals for every square family"
+    },
+    {
+      "statement": "A KD-real observable can have positive FI for a KD-real mixed state and generator",
+      "locator": "Source p. 45, paragraph before the postselection remark; note Corollary 4",
+      "status": "proved",
+      "proof": "The KD-real SLD's spectral measurement attains QFI; the original bases still have zero FI"
+    },
+    {
+      "statement": "Zero QFI if and only if the state and generator commute",
+      "locator": "Source Lemma 6.4, p. 43",
+      "status": "prior proof cited",
+      "proof": "Source proof; the note's QFI formulas specify the commuting parameters"
+    },
+    {
+      "statement": "Pure-state KD-real SLD exclusion",
+      "locator": "Source Proposition 6.5, p. 44; journal Proposition 7",
+      "status": "prior proof cited",
+      "proof": "Source theorem; the counterexamples, including both endpoints, are mixed"
+    },
+    {
+      "statement": "Exclusion for states in the real span of the two basis-diagonal spaces",
+      "locator": "Source (6.16), p. 41, and two mixed-state examples following (6.29), pp. 44-45; note Corollary 5",
+      "status": "proved",
+      "proof": "KD-real Hermitian products have real diagonal in both bases; Tr(rho[X,L])=0 forces QFI=0. Removes both restricted examples' extra restrictions, with no faithfulness assumption"
+    },
+    {
+      "statement": "Exclusion for all KD-real states when the transition matrix is real up to basis phases; no counterexamples in dimensions one or two",
+      "locator": "Source real-transition discussion, pp. 43 and 45; note Corollary 6",
+      "status": "proved",
+      "proof": "Symbols are invariant under basis phases. With real overlaps, KD-real Hermitian matrices are real symmetric; the Jordan and commutator sides are respectively real and purely imaginary. Every nonzero-entry two-by-two unitary is real up to basis phases"
+    },
+    {
+      "statement": "Exclusion for every KD-real state in cyclic-prime Fourier bases",
+      "locator": "Source reference [23]; De Bievre-Langrenez-Radchenko Theorems 3.1 and 4.1; note Corollary 7",
+      "status": "proved",
+      "proof": "The cited classification identifies the KD-real space with the real span of the two basis projector families; apply Corollary 5"
+    },
+    {
+      "statement": "Faithful SLD closure in a star-algebra with KD-real Hermitian part",
+      "locator": "Note Proposition 8 and following Weyl construction; finite-group Fourier structure in source reference [23]",
+      "status": "proved",
+      "proof": "The positive Jordan map is an invertible endomorphism of the algebra's finite-dimensional Hermitian space; explicit graph-Weyl identities realize the square construction"
+    },
+    {
+      "statement": "Mixed-state exclusion for Haar-almost every pair of bases in every fixed finite dimension",
+      "locator": "Source reference [69]; arXiv:2405.17557v2, Theorem 1, (7); note Corollary 7",
+      "status": "proved",
+      "proof": "The cited minimal KD-real-space theorem identifies the real span of the two original basis-projector families; apply Corollary 5. The prior structure theorem is attributed to Langrenez, Salmon, De Bievre, Thio, Long and Arvidsson-Shukur"
+    },
+    {
+      "statement": "Postselected metrology questions",
+      "locator": "Source p. 45, final paragraph, references [42,70]",
+      "status": "not covered",
+      "proof": "A different model and KD distribution; Das-Modak-Bera, Physical Review A 107 (2023), 042413, addresses positive-KD postselected advantage, not the fixed-basis SLD conjecture"
+    },
+    {
+      "statement": "Finite-group KD-real span and pure-state classification",
+      "locator": "Source reference [23]; arXiv:2501.12252v2, Theorems 3.1 and 4.1",
+      "status": "prior proof cited",
+      "proof": "De Bievre-Langrenez-Radchenko; journal online 2 September 2025"
+    },
+    {
+      "statement": "LCA-group span and convex-hull conjectures",
+      "locator": "Source reference [24]; arXiv:2507.23628v3, p. 7, (11)-(12)",
+      "status": "not covered",
+      "proof": "The finite matrix identities do not settle infinite-group closure questions"
+    },
+    {
+      "statement": "Minimum counterexample dimension and complete classification of bases",
+      "locator": "Note Section 4",
+      "status": "not covered",
+      "proof": "Corollary 6 and Theorem 1 place the least counterexample dimension between three and nine; the exact value and a complete classification remain undetermined"
+    }
+  ],
+  "verification_scope": {
+    "lean": "Concrete dimension-nine lambda=1 refutation only, at pinned upstream 71b4592f31a0ce564acedcbee195fbd50f30bd8c",
+    "written_proofs": "Theorem 1, Corollaries 2-7, Proposition 8 and graph-Weyl identities",
+    "finite_checks": "Dimension-nine fixed identities and six rational parameters; closed-segment t=0,1/3,1; square orders n=2,4,6; basis-diagonal trace obstruction"
+  }
+}

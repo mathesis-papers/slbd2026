@@ -5,13 +5,15 @@
 We refute the mixed-state conjecture of Spriet, Langrenez, Brummelhuis and De Bièvre in arXiv:2511.01996v2, Section 6.3 immediately after (6.23), p. 43: a KD-real state and generator can have a KD-real symmetric logarithmic derivative with nonzero quantum Fisher information. Two rank-three projections in dimension nine give a faithful KD-positive state with quantum Fisher information 1/6. The construction gives a one-parameter family, two singular mixed endpoints, and counterexamples in every square dimension n^2 with n>=3. Exclusion holds for states in the real span of the two basis-diagonal spaces, for cyclic-prime Fourier bases, and for all KD-real states when the transition matrix is real up to basis phases. Exclusion also holds for Haar-almost every pair of bases in each finite dimension.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.23971327](https://doi.org/10.5281/zenodo.23971327)
+- Concept DOI: [https://doi.org/10.5281/zenodo.23971326](https://doi.org/10.5281/zenodo.23971326)
 - License: CC-BY-4.0
 - Version: 2
 - Mathesis record: [slbd2026](https://mathesis-omega-research.apps.chrono-ai.fun/papers/slbd2026?version=2)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43. Mathesis, version 2. https://mathesis-omega-research.apps.chrono-ai.fun/papers/slbd2026?version=2
+Haobo Ma, Wenlin Zhang (2026). A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43. Mathesis, version 2. https://doi.org/10.5281/zenodo.23971327
 
 ## Statement progress
 

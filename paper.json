@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.23971326",
     "current_version": 2,
-    "doi": null,
+    "doi": "10.5281/zenodo.23971327",
     "lean_source": {
       "revision": "71b4592f31a0ce564acedcbee195fbd50f30bd8c",
       "url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"

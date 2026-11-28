@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.23971326",
     "current_version": 2,
     "doi": "10.5281/zenodo.23971327",
+    "kind": "note",
     "lean_source": {
       "revision": "71b4592f31a0ce564acedcbee195fbd50f30bd8c",
       "url": "https://github.com/the-omega-institute/trureturing/blob/71b4592f31a0ce564acedcbee195fbd50f30bd8c/D5/S3/Quantum/Information/KirkwoodDiracSLDRefutation.lean"
@@ -55,10 +56,12 @@
     "title": "A KD-positive counterexample to the SLD conjecture in arXiv:2511.01996v2, Section 6.3 after (6.23), p. 43",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-25T19:02:07.558610821Z",
         "revision": "2",
-        "version": 2
+        "version": 2,
+        "version_label": null
       }
     ],
     "work": "slbd2026"
